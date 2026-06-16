@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ---------- LANDING PAGE ---------- */
+
+.landing-page{
+    background:#F0D9EF;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.landing-container{
+    position:relative;
+}
+
+#doodle{
+    width:250px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#doodle:hover{
+    transform:scale(1.05);
+}
+
+#message{
+    position:absolute;
+    top:-120px;
+    left:50%;
+    transform:translateX(-50%);
+    text-align:center;
+}
+
+#message p{
+    background:white;
+    padding:12px 22px;
+    border-radius:20px;
+    margin-bottom:10px;
+}
+
+#message button{
+    border:none;
+    background:white;
+    padding:12px 22px;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+.hidden{
+    display:none;
+}
+
+/* ---------- PORTFOLIO PAGE ---------- */
+
+.about-page{
+    background:#F0D9EF;
+    min-height:100vh;
+
+    font-family:"Times New Roman", serif;
+    position:relative;
+    overflow-x:hidden;
+}
+
+.watermark{
+    position:fixed;
+    right:30px;
+    bottom:20px;
+
+    width:260px;
+
+    opacity:0.06;
+
+    pointer-events:none;
+}
+
+.portfolio-title{
+    padding:35px 50px;
+
+    font-size:32px;
+    font-weight:bold;
+}
+
+.slider{
+    width:80%;
+    max-width:950px;
+
+    margin:20px auto;
+}
+
+.slide{
+    display:none;
+
+    min-height:550px;
+
+    padding:60px;
+
+    border-radius:30px;
+
+    background:#F8E8F7;
+
+    text-align:center;
+
+    justify-content:center;
+    flex-direction:column;
+
+    border:2px solid #D9A9D6;
+
+    box-shadow:
+        0 0 0 10px #E9C5E7,
+        0 12px 30px rgba(0,0,0,0.08);
+}
+
+.slide.active{
+    display:flex;
+}
+
+.slide h1{
+    font-size:42px;
+    margin-bottom:35px;
+}
+
+.slide p{
+    font-size:21px;
+    line-height:1.9;
+    margin-bottom:22px;
+    color:#333;
+}
+
+.controls{
+    text-align:center;
+    padding:50px;
+}
+
+.controls button{
+    width:60px;
+    height:60px;
+
+    border:none;
+    border-radius:50%;
+
+    background:white;
+
+    margin:0 10px;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.controls button:hover{
+    transform:scale(1.05);
+}
